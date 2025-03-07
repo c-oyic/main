@@ -1,4 +1,13 @@
-# Logs
+# 依赖包
+node_modules
+.pnpm-store/
+
+# 构建输出
+dist
+dist-ssr
+*.local
+
+# 日志文件
 logs
 *.log
 npm-debug.log*
@@ -7,14 +16,12 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
-
-# Editor directories and files
+# 编辑器目录和文件
 .vscode/*
 !.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
 .idea
 .DS_Store
 *.suo
@@ -22,3 +29,18 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# 环境变量文件
+.env
+.env.local
+.env.*.local
+
+# 测试覆盖率报告
+coverage
+
+# TypeScript缓存
+*.tsbuildinfo
+
+# 可选: Vite生成的类型声明文件
+auto-imports.d.ts
+components.d.ts
